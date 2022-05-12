@@ -1,1 +1,26 @@
-/* add home page styles here */
+body {
+    background-color: #ffa974;
+    color: #ff3757;
+
+}
+
+header {
+    background-color: #ff715a;
+    color: #ffde74;
+}
+
+footer {
+    background-color: #ffa974;
+}
+
+a:link {
+    color: #ff3757;
+}
+
+a:visited {
+    color: #ffde74;
+}
+
+a:hover {
+    color: rgb(121, 251, 82);
+}
