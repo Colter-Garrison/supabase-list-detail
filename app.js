@@ -5,7 +5,7 @@ const insectList = document.getElementById('insect-list');
 
 async function loadData() {
     const insects = await getInsects();
-    console.log(insects);
+    // console.log(insects);
 
     for (let insect of insects) {
         const insectDiv = renderInsectCard(insect);

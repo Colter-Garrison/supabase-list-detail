@@ -1,7 +1,6 @@
 body {
     background-color: #ffa974;
     color: #ff3757;
-
 }
 
 header {
@@ -22,5 +21,12 @@ a:visited {
 }
 
 a:hover {
-    color: rgb(121, 251, 82);
+    color: rgb(184, 232, 141);
+}
+
+.insect-card {
+    background-color: #ffa974;
+}
+
+#insect-list {
 }

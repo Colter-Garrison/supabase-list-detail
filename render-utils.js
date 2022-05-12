@@ -8,7 +8,7 @@ export function renderInsectCard(insect) {
 
     h1.textContent = insect.name;
     img.src = `${insect.image}`;
-    a.href = `./detail/?id={insect.id}`;
+    a.href = `./details/?id=${insect.id}`;
 
     div.append(h1, img);
 
@@ -39,7 +39,7 @@ export function renderInsectDetail(insect) {
     foundEl.textContent = `Among other places, this insect is found in ${insect.found}.`;
     foundEl.classList.add('found');
 
-    img.src = `${insect.image}`;
+    img.src = `.${insect.image}`;
 
     div.append(nameEl, img, nativeEl, lengthEl, foundEl);
 
