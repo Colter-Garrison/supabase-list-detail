@@ -4,5 +4,11 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function getInsects() {
-    
+    const response = await client.from('insects').select('*');
+    return response.data;
+}
+
+export async function getInsect(id) {
+    const response = await client.from('insects').select('*').match({ id }).single();
+    return response.data;
 }

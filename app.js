@@ -1,8 +1,16 @@
-// import functions and grab DOM elements
+import { getInsects } from './fetch-utils.js';
+import { renderInsectCard } from './render-utils.js';
 
-// let state
+const insectList = document.getElementById('insect-list');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+async function loadData() {
+    const insects = await getInsects();
+    console.log(insects);
+
+    for (let insect of insects) {
+        const insectDiv = renderInsectCard(insect);
+        insectList.append(insectDiv);
+    }
+}
+
+loadData();
