@@ -27,10 +27,16 @@ a:hover {
 .insect-card {
     background-color: #ffa974;
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #insect-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.insect-card img {
+    width: 460px;
 }
