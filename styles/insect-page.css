@@ -1,0 +1,8 @@
+header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.insect-detail img {
+    height: 400px;
+}

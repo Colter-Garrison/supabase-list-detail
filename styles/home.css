@@ -1,1 +1,42 @@
-/* add home page styles here */
+body {
+    background-color: #ffa974;
+    color: #ff3757;
+}
+
+header {
+    background-color: #ff715a;
+    color: #ffde74;
+}
+
+footer {
+    background-color: #ffa974;
+}
+
+a:link {
+    color: #ff3757;
+}
+
+a:visited {
+    color: #ffde74;
+}
+
+a:hover {
+    color: rgb(184, 232, 141);
+}
+
+.insect-card {
+    background-color: #ffa974;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#insect-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.insect-card img {
+    width: 460px;
+}
